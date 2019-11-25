@@ -1,6 +1,13 @@
 .container {
-  width: 400px;
-  margin: 10px auto;
+  width: 650px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 400px 250px; 
+  grid-template-areas: 
+    'titulo history'
+    'display history'
+    'teclado history';
 }
 
 h2 {
@@ -9,6 +16,7 @@ h2 {
   font-size: 30px;
   text-align: center;
   color: #666;
+  grid-area: titulo;
 }
 
 .display {
@@ -18,6 +26,7 @@ h2 {
   height: 70px;
   font-size: 44px;
   text-align: right;
+  grid-area: display;
 }
 
 .teclado {
@@ -32,6 +41,18 @@ h2 {
     'A1 A2 A3 ADD'
     'NA A0 PONTO IGUAL';
   text-align: center;
+  grid-area: teclado;
+}
+
+.history {
+  grid-area: history;
+}
+.history h2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.history p {
+  margin: 10px 30px;
 }
 
 .grid-area {

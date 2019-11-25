@@ -9,7 +9,8 @@ class Calculadora extends React.Component {
       display: '',
       n1: '',
       n2: '',
-      operacao: ''
+      operacao: '',
+      simbolo: ''
     }
   }
 
@@ -37,9 +38,9 @@ class Calculadora extends React.Component {
     this.setState({ display: displayFinal });
   }
 
-  handleClickOperacao(operacao) {
+  handleClickOperacao(operacao, simbolo) {
     let { display, n1 } = this.state;
-    this.setState({ n1: n1 || display, display: '', operacao });
+    this.setState({ n1: n1 || display, display: '', operacao, simbolo });
   }
 
   handleClickIgual() {
@@ -47,7 +48,7 @@ class Calculadora extends React.Component {
     this.setState({ n2: display, display: '' });
 
     let operacaoRef = this.operacoes[this.state.operacao];
-    let result = operacaoRef(parseInt(this.state.n1), parseInt(display));
+    let result = operacaoRef(parseFloat(this.state.n1), parseFloat(display));
 
     this.setState({ display: result });
   }
@@ -55,9 +56,14 @@ class Calculadora extends React.Component {
   handleClickLimpar() {
     this.setState({ display: '', n1: '', n2: '', operacao: '' });
   }
-  
-  handleClickPonto() {
 
+  handleClickPonto() {
+    let displayAtual = this.state.display;
+    if (displayAtual.indexOf('.') > 0)
+      return;
+
+    let displayFinal = `${displayAtual}.`;
+    this.setState({display: displayFinal});
   }
 
   render() {
@@ -86,10 +92,14 @@ class Calculadora extends React.Component {
             <div className="grid-area grid-area-c" onClick={() => this.handleClickLimpar()}>C</div>
             <div className="grid-area grid-area-del" onClick={() => this.handleClickLimpar()}>DEL</div>
 
-            <div className="grid-area grid-area-div" onClick={() => this.handleClickOperacao('dividir')}>/</div>
-            <div className="grid-area grid-area-mul" onClick={() => this.handleClickOperacao('multiplicar')}>*</div>
-            <div className="grid-area grid-area-add" onClick={() => this.handleClickOperacao('adicionar')}>+</div>
-            <div className="grid-area grid-area-sub" onClick={() => this.handleClickOperacao('subtrair')}>-</div>
+            <div className="grid-area grid-area-div" onClick={() => this.handleClickOperacao('dividir', '/')}>/</div>
+            <div className="grid-area grid-area-mul" onClick={() => this.handleClickOperacao('multiplicar', '*')}>*</div>
+            <div className="grid-area grid-area-add" onClick={() => this.handleClickOperacao('adicionar', '+')}>+</div>
+            <div className="grid-area grid-area-sub" onClick={() => this.handleClickOperacao('subtrair', '-')}>-</div>
+          </div>
+          <div className="history">
+            <h2>Histórico de Cálculos</h2>
+            <p> {this.state.n1}  {this.state.simbolo} {this.state.n2} = {this.state.display} </p>
           </div>
         </div>
       </React.Fragment>

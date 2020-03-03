@@ -1,0 +1,36 @@
+html, body, #root {
+  height: 100%;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-interno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-button {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin:  15px 0px 15px 0px;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  font-weight: 600;
+  background-color: #FFDA32;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+}

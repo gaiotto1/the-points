@@ -1,0 +1,223 @@
+html, body, #root {
+  display: block
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1C1C1C;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img {
+  width: 260px;
+  height: auto;
+  margin-bottom: -52px;
+  margin-top: -69px;
+  margin-left: -32px;
+  cursor: pointer;
+}
+
+img:hover {
+  opacity: 0.8
+}
+
+h2 {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.tipo {
+  color: #FFF;
+}
+
+.container{
+  width: auto;
+}
+
+.teclado {
+  display: grid;
+  grid-gap: 1px;  
+  grid-template-rows: 75px 90px 90px 90px 90px;
+  grid-template-areas: 
+    'CE C DEL DIV'
+    'A7 A8 A9 MUL'
+    'A4 A5 A6 SUB'
+    'A1 A2 A3 ADD'
+    'A10 A11 A12 IGUAL';
+  text-align: center;
+  grid-area: teclado;
+}
+
+.Pontuar{
+  background-color: #373839;
+  color: #FFF;
+  width: 100%;
+  height: auto;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  padding: 14px 40px;
+  margin-top: 25px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+.grid-area {
+  font-size: 25px;
+font-family: sans-serif;
+  padding-top: 25px;
+  cursor: pointer;
+  background: #FFDA32;
+} 
+.grid-area:hover {
+  background: #FFDA32;
+  color: #FFF;
+}
+
+.grid-area-1 {
+  grid-area: A1;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-2 {
+  grid-area: A2;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-3 {
+  grid-area: A3;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-4 {
+  grid-area: A4;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-5 {
+  grid-area: A5;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-6 {
+  grid-area: A6;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-7 {
+  grid-area: A7;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-8 {
+  grid-area: A8;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-9 {
+  grid-area: A9;
+  color: #FFF;
+  background: #373839;
+}
+
+.grid-area-10 {
+  grid-area: A10;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-11 {
+  grid-area: A11;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-12 {
+  grid-area: A12;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-na {
+  grid-area: NA;
+  color: #FFF;
+  background: #373839;
+}
+.grid-area-0 {
+  grid-area: A0;
+  color: #FFF;
+  background: #373839;
+}
+
+.grid-area-igual {  
+  color: #1C1C1C;
+  font-family: fantasy;
+}
+.grid-area-csharp {
+  background: #FFDA32;
+  color: #1C1C1C;
+  font-family: fantasy;
+  
+}
+.grid-area-c {
+  
+  color: #1C1C1C;
+  font-family: fantasy;
+}
+.grid-area-del {
+  
+  color: #1C1C1C;
+  font-family: fantasy;
+}
+
+.grid-area-mul {
+  
+  color: #1C1C1C;
+  font-family: fantasy;
+}
+.grid-area-add {
+  
+  color: #1C1C1C;
+  font-family: fantasy;
+  
+}
+.grid-area-sub {
+  
+  color: #1C1C1C;
+  font-family: fantasy;
+}
+
+
+.dialogContent {
+  padding: 0px !important;
+}
+
+.cardNumero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cardNumero p {
+  margin: 0;
+  padding: 0;
+  font-size: 158px;
+}
+
+.MuiDialogContent-root {
+  background: #FFDA32;
+  color: #1C1C1C;
+  width: 300px;
+  height: 500px;
+  font-size: large;
+}

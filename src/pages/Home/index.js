@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import './style.css';
-import logo from 'C:/Projetos/Calculadora/Calculadora-ReactJS/src/img/logo.png';
+import logo from '../../img/logo.png';
 
 class Home extends Component {
   state = {

@@ -9,6 +9,7 @@ html, body, #root {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 
 .container-interno {
@@ -29,8 +30,9 @@ html, body, #root {
   width: 200px;
   height: 60px;
   font-weight: 600;
-  background-color: #FFDA32;
+  background-color: #0C9ABE;
   border: none;
   border-radius: 3px;
   font-size: 18px;
+  color: #ffffff;
 }

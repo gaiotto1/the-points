@@ -76,15 +76,16 @@ class Calculadora extends Component {
           <div className="grid-area grid-area-11" onClick={() => { handleClickOpen('8'); }}>8</div>
           <div className="grid-area grid-area-12" onClick={() => { handleClickOpen('5'); }}>5</div>
 
-          <div className="grid-area grid-area-csharp">C#</div>
-          <div className="grid-area grid-area-c">Uniface</div>
-          <div className="grid-area grid-area-del">API/WS</div>
-          <div className="grid-area grid-area-div" />
+          <div className="grid-area grid-area-csharp"></div>
+          <div className="grid-area grid-area-c">C# </div>
+          <div className="grid-area grid-area-del">Uniface </div>
+          <div className="grid-area grid-area-div"> API/WS</div>
           <div className="grid-area grid-area-mul2">PP</div>
           <div className="grid-area grid-area-mul">P</div>
           <div className="grid-area grid-area-add">M</div>
           <div className="grid-area grid-area-sub">G</div>
           <div className="grid-area grid-area-igual">GG</div>
+          
         </div>
       </div>
     );

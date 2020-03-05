@@ -33,7 +33,7 @@ h2 {
 }
 
 .tipo {
-  color: #373839;
+  color: #FFF;
 }
 
 .container{
@@ -56,158 +56,159 @@ h2 {
     'ADD A1 A2 A3 '
     ' IGUAL A10 A11 A12';
   text-align: center;
-  grid-area: tecladoM;
+  grid-areaMelhoria: tecladoM;
+  background: #373839;
 }
 
 
 
 
-.grid-area {
+.grid-areaMelhoria {
   font-size: 25px;
 font-family: sans-serif;
   padding-top: 25px;
   cursor: pointer;
-  background: #0C9ABE;
+  background: #00B28E;
 } 
-.grid-area:hover {
-  background: #0C9ABE;
+.grid-areaMelhoria:hover {
+  background: #00B28E;
   color: #FFF;
 }
 
-.grid-area-1 {
+.grid-areaMelhoria-1 {
   grid-area: A1;
   color: #FFF;
   background: #373839;
 }
-.grid-area-2 {
+.grid-areaMelhoria-2 {
   grid-area: A2;
   color: #FFF;
   background: #373839;
 }
-.grid-area-3 {
+.grid-areaMelhoria-3 {
   grid-area: A3;
   color: #FFF;
   background: #373839;
 }
-.grid-area-4 {
+.grid-areaMelhoria-4 {
   grid-area: A4;
   color: #FFF;
   background: #373839;
 }
-.grid-area-5 {
+.grid-areaMelhoria-5 {
   grid-area: A5;
   color: #FFF;
   background: #373839;
 }
-.grid-area-6 {
+.grid-areaMelhoria-6 {
   grid-area: A6;
   color: #FFF;
   background: #373839;
 }
-.grid-area-7 {
+.grid-areaMelhoria-7 {
   grid-area: A7;
   color: #FFF;
   background: #373839;
 }
-.grid-area-8 {
+.grid-areaMelhoria-8 {
   grid-area: A8;
   color: #FFF;
   background: #373839;
 }
-.grid-area-9 {
+.grid-areaMelhoria-9 {
   grid-area: A9;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-10 {
+.grid-areaMelhoria-10 {
   grid-area: A10;
   color: #FFF;
   background: #373839;
 }
-.grid-area-11 {
+.grid-areaMelhoria-11 {
   grid-area: A11;
   color: #FFF;
   background: #373839;
 }
-.grid-area-12 {
+.grid-areaMelhoria-12 {
   grid-area: A12;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-13 {
+.grid-areaMelhoria-13 {
   grid-area: A13;
   color: #FFF;
   background: #373839;
 }
-.grid-area-14 {
+.grid-areaMelhoria-14 {
   grid-area: A14;
   color: #FFF;
   background: #373839;
 }
-.grid-area-15 {
+.grid-areaMelhoria-15 {
   grid-area: A15;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-na {
+.grid-areaMelhoria-na {
   grid-area: NA;
   color: #FFF;
   background: #373839;
 }
-.grid-area-0 {
+.grid-areaMelhoria-0 {
   grid-area: A0;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-igual {  
+.grid-areaMelhoria-igual {  
   color: #FFF;
   
 }
-.grid-area-csharp {
+.grid-areaMelhoria-csharp {
   color: #FFF;
   
   
 }
-.grid-area-c {
-  
-  color: #FFF;
-  
-}
-
-.grid-area-div {
-  
-  color: #FFF;
-
-}
-
-.grid-area-del {
+.grid-areaMelhoria-c {
   
   color: #FFF;
   
 }
 
-.grid-area-mul {
+.grid-areaMelhoria-div {
+  
+  color: #FFF;
+
+}
+
+.grid-areaMelhoria-del {
   
   color: #FFF;
   
 }
 
-.grid-area-mul2 {
+.grid-areaMelhoria-mul {
   
   color: #FFF;
   
 }
-.grid-area-add {
+
+.grid-areaMelhoria-mul2 {
+  
+  color: #FFF;
+  
+}
+.grid-areaMelhoria-add {
   
   color: #FFF;
   
   
 }
-.grid-area-sub {
+.grid-areaMelhoria-sub {
   
   color: #FFF;
   
@@ -218,21 +219,25 @@ font-family: sans-serif;
   padding: 0px !important;
 }
 
-.cardNumero {
+.cardNumeroMelhoria {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  background: #00B28E;
+  color: #FFF;
 }
 
-.cardNumero p {
+.cardNumeroMelhoria p {
   margin: 0;
   padding: 0;
   font-size: 158px;
+  background: #00B28E;
+  color: #FFF;
 }
 
 .MuiDialogContent-root {
-  background: #0C9ABE;
+  background: #00B28E;
   color: #FFF;
   width: 300px;
   height: 500px;

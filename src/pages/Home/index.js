@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
-import './style.css';
+import './styleHome.css';
 import logo from 'C:/Projetos/Calculadora/Calculadora-ReactJS/src/img/logo.png';
 
 class Home extends Component {
@@ -23,21 +23,21 @@ class Home extends Component {
       
       <div className="home">
         <div className="container-interno">
-          <img src={logo} alt="logo"/>
+          <img className="logo" src={logo} alt="logo"/>
           <div className="container-button">
-              <button type="button" onClick={() => this.setState({ desenvolvimento: true })} className="button">
+              <button type="button" onClick={() => this.setState({ desenvolvimento: true })} className="buttonDesen">
                 Desenvolvimento
               </button>
             </div>
 
             <div className="container-button">
-              <button type="button" onClick={() => this.setState({ melhoria: true })} variant="contained" color="primary" className="button">
+              <button type="button" onClick={() => this.setState({ melhoria: true })} variant="contained" color="primary" className="buttonMelhoria">
               Melhorias
               </button>
             </div>
 
             <div className="container-button">
-              <button type="button" onClick={() => this.setState({ manutencao: true })} variant="contained" color="primary" className="button">
+              <button type="button" onClick={() => this.setState({ manutencao: true })} variant="contained" color="primary" className="buttonManu">
               Manutenções
               </button>
             </div>

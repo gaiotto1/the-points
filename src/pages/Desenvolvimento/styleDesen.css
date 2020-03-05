@@ -1,8 +1,4 @@
-html, body, #root {
-  display: block
-}
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -22,11 +18,6 @@ img {
   margin-bottom: -52px;
   margin-top: -69px;
   margin-left: -32px;
-  cursor: pointer;
-}
-
-img:hover {
-  opacity: 0.8
 }
 
 h2 {
@@ -37,178 +28,181 @@ h2 {
   
 }
 
-.tipo {
+.tipoD {
   color: #FFF;
 }
 
 .container{
   width: auto;
+  height: 100%;
+  background-color:#373839 ;
+
 }
 
-.teclado {
+.tecladoD {
   display: grid;
   grid-gap: 1px;  
   
   grid-template-rows: 75px 90px 90px 90px 90px 90px;
   grid-template-areas: 
     'DIV CSHARP DEL  C  '
+    'MUL2 A13 A14 A15 '
     'MUL A7 A8 A9 '
     'SUB A4 A5 A6 '
     'ADD A1 A2 A3 '
     ' IGUAL A10 A11 A12';
   text-align: center;
-  grid-area: tecladoM;
+  grid-area: tecladoD;
+  background-color:#373839 ;
 }
 
 
-
-
-.grid-area {
+.grid-areaD {
   font-size: 25px;
 font-family: sans-serif;
   padding-top: 25px;
   cursor: pointer;
   background: #0C9ABE;
 } 
-.grid-area:hover {
+.grid-areaD:hover {
   background: #0C9ABE;
   color: #FFF;
 }
 
-.grid-area-1 {
+.grid-areaD-1 {
   grid-area: A1;
   color: #FFF;
   background: #373839;
 }
-.grid-area-2 {
+.grid-areaD-2 {
   grid-area: A2;
   color: #FFF;
   background: #373839;
 }
-.grid-area-3 {
+.grid-areaD-3 {
   grid-area: A3;
   color: #FFF;
   background: #373839;
 }
-.grid-area-4 {
+.grid-areaD-4 {
   grid-area: A4;
   color: #FFF;
   background: #373839;
 }
-.grid-area-5 {
+.grid-areaD-5 {
   grid-area: A5;
   color: #FFF;
   background: #373839;
 }
-.grid-area-6 {
+.grid-areaD-6 {
   grid-area: A6;
   color: #FFF;
   background: #373839;
 }
-.grid-area-7 {
+.grid-areaD-7 {
   grid-area: A7;
   color: #FFF;
   background: #373839;
 }
-.grid-area-8 {
+.grid-areaD-8 {
   grid-area: A8;
   color: #FFF;
   background: #373839;
 }
-.grid-area-9 {
+.grid-areaD-9 {
   grid-area: A9;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-10 {
+.grid-areaD-10 {
   grid-area: A10;
   color: #FFF;
   background: #373839;
 }
-.grid-area-11 {
+.grid-areaD-11 {
   grid-area: A11;
   color: #FFF;
   background: #373839;
 }
-.grid-area-12 {
+.grid-areaD-12 {
   grid-area: A12;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-13 {
+.grid-areaD-13 {
   grid-area: A13;
   color: #FFF;
   background: #373839;
 }
-.grid-area-14 {
+.grid-areaD-14 {
   grid-area: A14;
   color: #FFF;
   background: #373839;
 }
-.grid-area-15 {
+.grid-areaD-15 {
   grid-area: A15;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-na {
+.grid-areaD-na {
   grid-area: NA;
   color: #FFF;
   background: #373839;
 }
-.grid-area-0 {
+.grid-areaD-0 {
   grid-area: A0;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-igual {  
+.grid-areaD-igual {  
   color: #FFF;
   
 }
-.grid-area-csharp {
+.grid-areaD-csharp {
   color: #FFF;
   
   
 }
-.grid-area-c {
-  
-  color: #FFF;
-  
-}
-
-.grid-area-div {
-  
-  color: #FFF;
-
-}
-
-.grid-area-del {
+.grid-areaD-c {
   
   color: #FFF;
   
 }
 
-.grid-area-mul {
+.grid-areaD-div {
+  
+  color: #FFF;
+
+}
+
+.grid-areaD-del {
   
   color: #FFF;
   
 }
 
-.grid-area-mul2 {
+.grid-areaD-mul {
   
   color: #FFF;
   
 }
-.grid-area-add {
+
+.grid-areaD-mul2 {
+  
+  color: #FFF;
+  
+}
+.grid-areaD-add {
   
   color: #FFF;
   
   
 }
-.grid-area-sub {
+.grid-areaD-sub {
   
   color: #FFF;
   
@@ -219,17 +213,21 @@ font-family: sans-serif;
   padding: 0px !important;
 }
 
-.cardNumero {
+.cardNumeroDesen {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  background: #0C9ABE;
+  color: #FFF;
 }
 
-.cardNumero p {
+.cardNumeroDesen p {
   margin: 0;
   padding: 0;
   font-size: 158px;
+  background: #0C9ABE;
+  color: #FFF;
 }
 
 .MuiDialogContent-root {

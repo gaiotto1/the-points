@@ -9,7 +9,7 @@ html, body, #root {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
+  background-color:#373839 ;
 }
 
 .container-interno {
@@ -26,7 +26,9 @@ html, body, #root {
   margin:  15px 0px 15px 0px;
 }
 
-.button {
+
+
+.buttonDesen{
   width: 200px;
   height: 60px;
   font-weight: 600;
@@ -35,4 +37,36 @@ html, body, #root {
   border-radius: 3px;
   font-size: 18px;
   color: #ffffff;
+}
+
+
+.buttonManu{
+  width: 200px;
+  height: 60px;
+  font-weight: 600;
+  background-color: #EA9B3E;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+
+.buttonMelhoria{
+  width: 200px;
+  height: 60px;
+  font-weight: 600;
+  background-color: #00B28E;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.logo {
+  width: 345px;
+  height: auto;
+  margin-bottom: -35px;
+  margin-top: -224px;
+  margin-left: -32px;
 }

@@ -1,4 +1,8 @@
+html, body, #root {
+  display: block
+}
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -18,6 +22,11 @@ img {
   margin-bottom: -52px;
   margin-top: -69px;
   margin-left: -32px;
+  cursor: pointer;
+}
+
+img:hover {
+  opacity: 0.8
 }
 
 h2 {
@@ -28,182 +37,183 @@ h2 {
   
 }
 
-.tipo {
+.tipoM {
   color: #FFF;
 }
 
 .container{
   width: auto;
-  height: 100%;
+  background-color:#373839 ;
 }
 
-.tecladoD {
+.teclado {
   display: grid;
   grid-gap: 1px;  
   
   grid-template-rows: 75px 90px 90px 90px 90px 90px;
   grid-template-areas: 
     'DIV CSHARP DEL  C  '
-    'MUL2 A13 A14 A15 '
     'MUL A7 A8 A9 '
     'SUB A4 A5 A6 '
     'ADD A1 A2 A3 '
     ' IGUAL A10 A11 A12';
   text-align: center;
-  grid-area: tecladoM;
+  grid-areaManu: teclado;
+  background-color:#373839 ;
 }
 
 
 
 
-.grid-area {
+.grid-areaManu {
   font-size: 25px;
 font-family: sans-serif;
   padding-top: 25px;
   cursor: pointer;
-  background: #0C9ABE;
+  background: #EA9B3E;
 } 
-.grid-area:hover {
-  background: #0C9ABE;
+.grid-areaManu:hover {
+  background: #EA9B3E;
   color: #FFF;
 }
 
-.grid-area-1 {
+.grid-areaManu-1 {
   grid-area: A1;
   color: #FFF;
   background: #373839;
 }
-.grid-area-2 {
+.grid-areaManu-2 {
   grid-area: A2;
   color: #FFF;
   background: #373839;
 }
-.grid-area-3 {
+.grid-areaManu-3 {
   grid-area: A3;
   color: #FFF;
   background: #373839;
 }
-.grid-area-4 {
+.grid-areaManu-4 {
   grid-area: A4;
   color: #FFF;
   background: #373839;
 }
-.grid-area-5 {
+.grid-areaManu-5 {
   grid-area: A5;
   color: #FFF;
   background: #373839;
 }
-.grid-area-6 {
+.grid-areaManu-6 {
   grid-area: A6;
   color: #FFF;
   background: #373839;
 }
-.grid-area-7 {
+.grid-areaManu-7 {
   grid-area: A7;
   color: #FFF;
   background: #373839;
 }
-.grid-area-8 {
+.grid-areaManu-8 {
   grid-area: A8;
   color: #FFF;
   background: #373839;
 }
-.grid-area-9 {
+.grid-areaManu-9 {
   grid-area: A9;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-10 {
+.grid-areaManu-10 {
   grid-area: A10;
   color: #FFF;
   background: #373839;
 }
-.grid-area-11 {
+.grid-areaManu-11 {
   grid-area: A11;
   color: #FFF;
   background: #373839;
 }
-.grid-area-12 {
+.grid-areaManu-12 {
   grid-area: A12;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-13 {
+.grid-areaManu-13 {
   grid-area: A13;
   color: #FFF;
   background: #373839;
 }
-.grid-area-14 {
+.grid-areaManu-14 {
   grid-area: A14;
   color: #FFF;
   background: #373839;
 }
-.grid-area-15 {
+.grid-areaManu-15 {
   grid-area: A15;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-na {
+.grid-areaManu-na {
   grid-area: NA;
   color: #FFF;
   background: #373839;
 }
-.grid-area-0 {
+.grid-areaManu-0 {
   grid-area: A0;
   color: #FFF;
   background: #373839;
 }
 
-.grid-area-igual {  
+.grid-areaManu-igual {  
   color: #FFF;
   
 }
-.grid-area-csharp {
+.grid-areaManu-csharp {
   color: #FFF;
   
   
 }
-.grid-area-c {
-  
-  color: #FFF;
-  
-}
-
-.grid-area-div {
-  
-  color: #FFF;
-
-}
-
-.grid-area-del {
+.grid-areaManu-c {
   
   color: #FFF;
   
 }
 
-.grid-area-mul {
+.grid-areaManu-div {
+  
+  color: #FFF;
+
+}
+
+.grid-areaManu-del {
   
   color: #FFF;
   
 }
 
-.grid-area-mul2 {
+.grid-areaManu-mul {
   
   color: #FFF;
   
 }
-.grid-area-add {
+
+.grid-areaManu-mul2 {
+  
+  color: #FFF;
+  
+}
+.grid-areaManu-add {
   
   color: #FFF;
   
   
 }
-.grid-area-sub {
+.grid-areaManu-sub {
   
   color: #FFF;
+  
   
 }
 
@@ -212,23 +222,20 @@ font-family: sans-serif;
   padding: 0px !important;
 }
 
-.cardNumero {
+.cardNumeroManu {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  background: #EA9B3E;
+  color: #FFF;
 }
 
-.cardNumero p {
+.cardNumeroManu p {
   margin: 0;
   padding: 0;
   font-size: 158px;
+  background: #EA9B3E;
+  color: #FFF;
 }
 
-.MuiDialogContent-root {
-  background: #0C9ABE;
-  color: #FFF;
-  width: 300px;
-  height: 500px;
-  font-size: large;
-}
